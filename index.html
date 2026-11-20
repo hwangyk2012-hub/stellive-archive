@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STELLIVE ARCHIVE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>STELLIVE ARCHIVE</h1>
+        <p>나만의 스텔라이브 멤버 도감</p>
+    </header>
+
+ 
+<main>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="멤버 이름을 검색하세요..."
+        >
+    </div>
+
+    <h2 class="section-title">MYSTIC</h2>
+    <div class="filter-buttons">
+        <button class="filter-button active" onclick="filterMembers('all', this)">
+            전체 보기
+        </button>
+
+        <button class="filter-button" onclick="filterMembers('favorites', this)">
+            ★ 즐겨찾기
+        </button>
+    </div>
+    <div class="member-grid">
+
+        <div class="member-card" onclick="showMember('아이리 칸나','MYSTIC','초기 유닛','졸업','STELLIVE의 초기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>아이리 칸나</h3>
+            <p>MYSTIC · HISTORICAL MEMBER</p>
+        </div>
+
+        <div class="member-card" onclick="showMember('아야츠노 유니','MYSTIC / EVERYS','1기','활동 중','STELLIVE 1기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>아야츠노 유니</h3>
+            <p>EVERYS · 1기</p>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">UNIVERSE</h2>
+    <div class="member-grid">
+
+        <div class="member-card" onclick="showMember('시라유키 히나','UNIVERSE','2기','활동 중','STELLIVE 2기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>시라유키 히나</h3>
+            <p>2기</p>
+        </div>
+
+        <div class="member-card" onclick="showMember('네네코 마시로','UNIVERSE','2기','활동 중','STELLIVE 2기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>네네코 마시로</h3>
+            <p>2기</p>
+        </div>
+
+        <div class="member-card" onclick="showMember('아카네 리제','UNIVERSE','2기','활동 중','STELLIVE 2기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>아카네 리제</h3>
+            <p>2기</p>
+        </div>
+
+        <div class="member-card" onclick="showMember('아라하시 타비','UNIVERSE','2기','활동 중','STELLIVE 2기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>아라하시 타비</h3>
+            <p>2기</p>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">CLICHÉ</h2>
+    <div class="member-grid">
+
+        <div class="member-card" onclick="showMember('텐코 시부키','CLICHÉ','3기','활동 중','STELLIVE 3기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>텐코 시부키</h3>
+            <p>3기</p>
+        </div>
+
+        <div class="member-card" onclick="showMember('아오쿠모 린','CLICHÉ','3기','활동 중','STELLIVE 3기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>아오쿠모 린</h3>
+            <p>3기</p>
+        </div>
+
+        <div class="member-card" onclick="showMember('하나코 나나','CLICHÉ','3기','활동 중','STELLIVE 3기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>하나코 나나</h3>
+            <p>3기</p>
+        </div>
+
+        <div class="member-card" onclick="showMember('유즈하 리코','CLICHÉ','3기','활동 중','STELLIVE 3기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>유즈하 리코</h3>
+            <p>3기</p>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">ABYSS</h2>
+    <div class="member-grid">
+
+        <div class="member-card" onclick="showMember('시즈키 토아','ABYSS','4기','활동 중','STELLIVE 4기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>시즈키 토아</h3>
+            <p>4기</p>
+        </div>
+
+        <div class="member-card" onclick="showMember('코가네 랑','ABYSS','4기','활동 중','STELLIVE 4기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>코가네 랑</h3>
+            <p>4기</p>
+        </div>
+
+        <div class="member-card" onclick="showMember('하나요 히요리','ABYSS','4기','활동 중','STELLIVE 4기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>하나요 히요리</h3>
+            <p>4기</p>
+        </div>
+
+        <div class="member-card" onclick="showMember('토키노 메리','ABYSS','4기','활동 중','STELLIVE 4기 멤버')">
+<button class="favorite-button" onclick="toggleFavorite(event, this)">☆</button>
+            <h3>토키노 메리</h3>
+            <p>4기</p>
+        </div>
+
+    </div>
+
+</main>
+
+
+    
+<div id="memberModal" class="modal">
+    <div class="modal-content">
+
+        <button class="close-button" onclick="closeMember()">×</button>
+
+        <p id="modalUnit">UNIT</p>
+
+        <h2 id="modalName">멤버 이름</h2>
+
+        <div class="modal-info">
+            <p>기수: <span id="modalGeneration"></span></p>
+            <p>상태: <span id="modalStatus"></span></p>
+        </div>
+
+        <p id="modalDescription"></p>
+
+    </div>
+</div>
+<footer>
+    UNOFFICIAL FAN PROJECT · STELLIVE ARCHIVE
+</footer>
+<script src="js/script.js"></script>
+</body>
+
+</html>
